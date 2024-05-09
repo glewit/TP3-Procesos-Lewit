@@ -82,9 +82,9 @@ int main(int argc, char **argv)
         }
     }
 
-    dup2(pipes[start][0], STDIN_FILENO);
+	dup2(pipes[start][0], STDIN_FILENO);
 	close(pipes[start][0]);
-
+	
 	dup2(pipes[(start+1)%(max_pipes)][1], STDOUT_FILENO);
 	close(pipes[(start+1)%(max_pipes)][1]);
 
