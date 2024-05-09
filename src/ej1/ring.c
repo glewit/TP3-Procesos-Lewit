@@ -9,10 +9,10 @@
 
 int main(int argc, char **argv)
 {	
-	int start, status, pid, n, c, s;
+	int start, status, n, c, s;
 	int buffer[1];
 
-	if (argc != 4){ printf("Uso: anillo <n> <c> <s> \n"); exit(0);}
+	if (argc != 4){ printf("Uso: ./ring <n> <c> <s> \n"); exit(0);}
     
     /* Parsing of arguments */
   	n = atoi(argv[1]);
