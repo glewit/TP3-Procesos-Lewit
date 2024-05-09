@@ -4,6 +4,9 @@
 #include <unistd.h>
 #include <sys/wait.h>
 
+// por alguna razon, cuando lo subo a github, si entro a ver el archivo desde la pagina de github el indentado aparece distinto,
+// pero al descargarlo se me descarga tal como lo subi. aclaro esto por las dudas, ya que al descargarlo deberia descargarse bien indentado.
+
 int main(int argc, char **argv)
 {	
 	int start, status, pid, n, c, s;
